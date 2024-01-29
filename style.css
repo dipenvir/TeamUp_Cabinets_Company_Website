@@ -1,0 +1,484 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(246, 243, 238);
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: kanit;
+    src: url(font/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: body;
+    src: url(font/Raleway-VariableFont_wght.ttf);
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 701px) {
+    .cover {
+        background-image: url("img/cover.jpg");
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+
+    }
+
+    .opacity {
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+        height: 100vh;
+        padding-left: 5%;
+    }
+
+    .opacity p {
+        text-transform: uppercase;
+        font-size: 2em;
+        color: #fff;
+
+    }
+
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 5em;
+        font-family: kanit;
+        margin: 0;
+        padding-top: 13%;
+    }
+
+    #moto {
+        font-family: kanit-thin;
+    }
+
+    header {
+        width: 100vw;
+        height: 12%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.2);
+        position: fixed;
+    }
+
+    nav li {
+        display: inline-block;
+        list-style: none;
+        padding: 0vh 1.5vw;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-family: kanit;
+        font-size: x-large;
+    }
+
+    nav a:hover {
+        color: #FFA836;
+        transition: all 0.4s ease 0s;
+    }
+
+    input:hover {
+        box-shadow: 5px 5px 5px black;
+        /* border: white solid 2px; */
+        transition: all 0.4s ease 0s;
+    }
+
+    #design:hover {
+        background-color: #FFA836;
+        transition: all 0.4s ease 0s;
+    }
+
+    header img {
+        margin-left: 5%;
+    }
+
+    #design {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.2);
+        border: #FFA836 solid 2px;
+        border-radius: 50px;
+        padding: 9px 25px;
+        margin-right: 5%;
+        font-family: kanit;
+    }
+
+    h2 {
+        font-family: kanit;
+        border-bottom: #FFA836 solid 5px;
+    }
+
+    p {
+        font-family: body;
+        font-size: larger;
+        font-weight: bold;
+        color: #3333339b;
+        line-height: 2.0;
+    }
+
+    .text2 h2 {
+        border: none;
+    }
+
+    h2 {
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+    .text1,
+    .text2 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            'kitchen bathroom';
+        grid-template-columns: 1fr 1fr;
+    }
+
+    td:nth-child(even) {
+        background: rgba(208, 106, 34, 0.2);
+    }
+
+    td:nth-child(odd) {
+        background: rgba(208, 194, 34, 0.2);
+    }
+
+    th {
+        background: rgba(34, 51, 208, 0.2);
+    }
+
+    td {
+        text-align: center;
+        height: 50px;
+    }
+
+    .kitchen {
+        grid-area: kitchen;
+        font-family: body;
+        line-height: 2.0;
+        background-image: url("img/kitchen.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bathroom {
+        grid-area: bathroom;
+        font-family: body;
+        line-height: 2.0;
+        background-image: url("img/bathroom.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container h2 {
+        text-align: center;
+        font-size: xx-large;
+    }
+
+
+    .readMore {
+        margin-left: 40%;
+        width: 120px;
+        margin-top: 10px;
+        font-family: kanit;
+        text-transform: uppercase;
+        padding: 10px;
+        font-size: larger;
+        font-weight: bold;
+        background-color: #FFA836;
+        color: white;
+        border: none;
+    }
+
+    .opacity2,
+    .opacity3 {
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 5%;
+        margin: 0;
+    }
+
+    input {
+
+        font-family: kanit;
+        text-transform: uppercase;
+        padding: 10px;
+        font-size: larger;
+        font-weight: bold;
+        background-color: #FFA836;
+        color: white;
+        border: none;
+    }
+    table{
+        
+        table-layout: fixed;
+        /* width: 100%; */
+    }
+    footer {
+        background-color: grey;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+        padding: 1%;
+        margin-top: 2%;
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer img {
+        height: 28px;
+        width: 28px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .cover {
+        background-image: url("img/custom.webp");
+        background-position: center;
+        background-size: cover;
+        height: 90vh;
+    }
+
+    .opacity {
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+        height: 90vh;
+        padding-left: 5%;
+    }
+
+    .opacity p {
+        text-transform: uppercase;
+        font-size: 2em;
+        color: #fff;
+
+    }
+
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 10vw;
+        font-family: kanit;
+        margin: 0;
+        padding-top: 15%;
+    }
+
+    #moto {
+        font-family: kanit-thin;
+        font-size: 5vw;
+        padding-top: 15%;
+
+    }
+
+    header {
+        width: 100vw;
+        height: 12%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: grey;
+    }
+
+    nav li {
+
+        display: inline-block;
+        list-style: none;
+        padding: 0px 1px 0px 1px;
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-family: kanit;
+        font-size: large;
+    }
+
+    nav a:hover {
+        color: #FFA836;
+        transition: all 0.4s ease 0s;
+    }
+
+    input:hover {
+        box-shadow: 5px 5px 5px black;
+        transition: all 0.4s ease 0s;
+    }
+
+    #design:hover {
+        background-color: #FFA836;
+        transition: all 0.4s ease 0s;
+    }
+
+    ul {
+        padding-inline-start: 0px;
+
+    }
+
+    header img {
+        margin-left: 3%;
+    }
+
+    #design {
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+        background: rgba(0, 0, 0, 0.2);
+        border: #FFA836 solid 2px;
+        border-radius: 50px;
+        padding: 3px 15px;
+        margin-right: 3%;
+        font-family: kanit;
+    }
+
+    h2 {
+        font-family: kanit;
+        border-bottom: #FFA836 solid 5px;
+    }
+
+    p {
+        font-family: body;
+        font-size: larger;
+        font-weight: bold;
+        color: #3333339b;
+        line-height: 2.0;
+    }
+
+    .text2 h2 {
+        border: none;
+    }
+
+    h2 {
+        font-size: 3em;
+        text-transform: uppercase;
+    }
+
+    .text1,
+    .text2 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            'kitchen'
+            'bathroom';
+        grid-template-columns: 100vw;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .kitchen {
+        grid-area: kitchen;
+        font-family: body;
+        line-height: 2.0;
+        background-image: url("img/kitchen.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .bathroom {
+        grid-area: bathroom;
+        font-family: body;
+        line-height: 2.0;
+        background-image: url("img/bathroom.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container h2 {
+        text-align: center;
+        font-size: xx-large;
+    }
+
+
+    .readMore {
+        margin-left: 40%;
+        width: 120px;
+        margin-top: 10px;
+        font-family: kanit;
+        text-transform: uppercase;
+        padding: 10px;
+        font-size: larger;
+        font-weight: bold;
+        background-color: #FFA836;
+        color: white;
+        border: none;
+    }
+
+    .opacity2,
+    .opacity3 {
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 5%;
+        margin: 0;
+
+    }
+
+    input {
+
+        font-family: kanit;
+        text-transform: uppercase;
+        padding: 10px;
+        font-size: larger;
+        font-weight: bold;
+        background-color: #FFA836;
+        color: white;
+        border: none;
+    }
+
+    footer {
+        background-color: grey;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        padding: 1%;
+        margin-top: 2%;
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer img {
+        height: 20px;
+        width: 20px;
+    }
+    table{
+        font-size: small;
+        table-layout: fixed;
+        width: 100%;
+    }
+    td:nth-child(even) {
+        background: rgba(208, 106, 34, 0.2);
+    }
+
+    td:nth-child(odd) {
+        background: rgba(208, 194, 34, 0.2);
+    }
+
+    th {
+        background: rgba(34, 51, 208, 0.2);
+    }
+
+    td {
+        text-align: center;
+        height: 50px;
+    }
+}
